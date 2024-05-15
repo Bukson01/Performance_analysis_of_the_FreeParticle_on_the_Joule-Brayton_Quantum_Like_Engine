@@ -21,3 +21,13 @@ dim_p_max = diff(dim_pr,g);
 
 % solves the resulting differentiation to observe the max values
 coeff = solve(dim_p_max==0, g);
+
+% displays the max values
+if isempty(coeff)
+    fprintf('There is no maximum value.')
+else
+    fprintf('The maximum values are:')
+    for i = 1:length(coeff)
+        fprintf('\n%d value: %d',i,coeff(i))
+    end
+end
