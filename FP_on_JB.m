@@ -17,10 +17,10 @@ dim_p = (  p./ (r-1) ) - ( (r.*q) ./ (r-1) );  % To be used for plotting the dim
 dim_pr = (  p./ (g-1) ) - ( (g.*q) ./ (g-1) ); % To be used for the calculation of  max dim power
 
 % performs the differentiation to get the max dimensionless power
-dim_p_max = diff(dim_pr,g);
+dp_dr = diff(dim_pr,g);
 
 % solves the resulting differentiation to observe the max values
-coeff = solve(dim_p_max==0, g);
+coeff = solve(dp_dr==0, g);
 
 % displays the max values
 if isempty(coeff)
