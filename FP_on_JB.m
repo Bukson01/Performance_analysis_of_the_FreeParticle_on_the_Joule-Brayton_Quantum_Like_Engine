@@ -15,3 +15,6 @@ q = a*c;
 % dimensionless power (P*)
 dim_p = (  p./ (r-1) ) - ( (r.*q) ./ (r-1) );  % To be used for plotting the dimensionless power
 dim_pr = (  p./ (g-1) ) - ( (g.*q) ./ (g-1) ); % To be used for the calculation of  max dim power
+
+% performs the differentiation to get the max dimensionless power
+dim_p_max = diff(dim_pr,g);
