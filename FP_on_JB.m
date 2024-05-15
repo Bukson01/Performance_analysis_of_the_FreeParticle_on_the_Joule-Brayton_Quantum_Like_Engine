@@ -43,5 +43,5 @@ ylabel(' p* ','fontweight','bold','fontsize',11);
 
  %%
 % setting axis
-% set(get(gca, 'XAxis'), 'FontWeight', 'bold')
-% set(get(gca, 'YAxis'), 'FontWeight', 'bold')
+set(get(gca, 'XAxis'), 'FontWeight', 'bold')
+set(get(gca, 'YAxis'), 'FontWeight', 'bold')
