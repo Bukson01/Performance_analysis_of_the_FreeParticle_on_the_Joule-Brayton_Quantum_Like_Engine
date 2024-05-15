@@ -20,7 +20,7 @@ The script analyzes the power output of a free particle in a quantum engine by c
 
 ## Usage
 
-1. Run the MATLAB script `dimensionless_power_computation.m`.
+1. Run the MATLAB script `FP_on_JB.m`.
 2. The script will compute the dimensionless power and display the maximum values, if any.
 3. A plot of dimensionless power versus length ratio will be generated.
 
