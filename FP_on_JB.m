@@ -30,6 +30,7 @@ else
     for i = 1:length(coeff)
         fprintf('\n%d value: %d',i,coeff(i))
     end
+<<<<<<< HEAD
 end
 
 %% Plotting of the graph
@@ -45,3 +46,6 @@ ylabel(' p* ','fontweight','bold','fontsize',11);
 % setting axis
 set(get(gca, 'XAxis'), 'FontWeight', 'bold')
 set(get(gca, 'YAxis'), 'FontWeight', 'bold')
+=======
+end
+>>>>>>> 33418cba33a24634823f0bf81fa04a7d510357dc
