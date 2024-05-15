@@ -18,3 +18,6 @@ dim_pr = (  p./ (g-1) ) - ( (g.*q) ./ (g-1) ); % To be used for the calculation 
 
 % performs the differentiation to get the max dimensionless power
 dim_p_max = diff(dim_pr,g);
+
+% solves the resulting differentiation to observe the max values
+coeff = solve(dim_p_max==0, g);
