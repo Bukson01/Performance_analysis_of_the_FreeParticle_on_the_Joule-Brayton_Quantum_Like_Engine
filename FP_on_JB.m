@@ -15,6 +15,16 @@ q = a*c;
 % dimensionless power (P*)
 dim_p = (  p./ (r-1) ) - ( (r.*q) ./ (r-1) );  % To be used for plotting the dimensionless power
 
+%% Plotting the graph of the dimensionless power
+% FP POWER* VS LENGTH RATIO 2012
+ figure;
+plot(r, dim_p, 'r-','LineWidth', 1)
+grid on;
+title(' Dimensionless Power Vs Length Ratio ');
+xlabel(' r ','fontweight','bold','fontsize',11);
+ylabel(' p* ','fontweight','bold','fontsize',11);
+
+% Computing the maximum dimensionless power (dp_dr)
 syms  r
 dim_pr = (  p./ (r-1) ) - ( (r.*q) ./ (r-1) ); % To be used for the calculation of  max dim power
 
@@ -35,14 +45,7 @@ else
 <<<<<<< HEAD
 end
 
-%% Plotting of the graph
-% FP POWER* VS LENGTH RATIO 2012
- figure;
-plot(r, dim_p, 'r-','LineWidth', 1)
-grid on;
-title(' Dimensionless Power Vs Length Ratio ');
-xlabel(' r ','fontweight','bold','fontsize',11);
-ylabel(' p* ','fontweight','bold','fontsize',11);
+
 
  %%
 % setting axis
